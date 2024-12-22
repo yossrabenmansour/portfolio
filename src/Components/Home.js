@@ -39,7 +39,6 @@ const Home=() =>{
       <h1>Welcome to My React Project</h1>
       <p>Explore various styling techniques and design elements implemented in this portfolio.</p>
       <p>Modification Amira</p>
-      <p>click here to learn more</p>
       <button
         className="learn-more"
         onClick={() => alert("Let's dive into the details!")}
