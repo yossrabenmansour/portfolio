@@ -53,11 +53,6 @@ img {
   height: auto;
 }
 
-button {
-  border: 0;
-  
-}
-
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
@@ -223,3 +218,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
