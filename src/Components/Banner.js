@@ -6,7 +6,7 @@ export default function Banner() {
     const[loopNumb,setLoopNumb]=useState(0);
     const [isDeleting,setIsDeleting]=useState(false)
     const [delta, setDelta]=useState (300- Math.random(0)*100);
-    const toRotate=["Web Developper" , "UX/UI Designer"]
+    const toRotate=["Web Developper" , "Full-Stack Developper "]
     const [text, setText]=useState('')
     const period=2000;
 
@@ -41,7 +41,7 @@ export default function Banner() {
   return (
     <section className="banner ">
   <Container>
-    <Row className="align-items-center">
+    <Row className="align-items-center text-center">
       <Col xs={12} md={6} xl={7}>
         <span className="tagline font-bold tracking-wider py-8px px-10px text-xl mb-16  inline-block">
           Welcome to my portfolio
@@ -50,7 +50,7 @@ export default function Banner() {
           {"Hi I'm Ben Mansour Yossra "}
           <span className="wrap">{text}</span>
         </h1>
-        <p className=" text-base tracking-wider  leading-6	 w-100">
+        <p>
           Junior web developer passionate about creating responsive and user-friendly interfaces. Always learning and ready for new challenges!
         </p>
         <button

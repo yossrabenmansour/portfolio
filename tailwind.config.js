@@ -1,23 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      animation: {
-        updown: 'updown 3s linear infinite',
-      },
-      keyframes: {
-        updown: {
-          '0%': {
-            transform: 'translateY(-20px)',
-          },
-          '50%': {
-            transform: 'translateY(20px)',
-          },
-          '100%': {
-            transform: 'translateY(-20px)',
-          },
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
