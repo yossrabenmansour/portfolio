@@ -39,28 +39,24 @@ export default function Banner() {
         }
     }
   return (
-    <section
-  className="banner relative mt-0 pt-[260px] pb-[100px] bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('./assets/img/banner-bg.png')" }}  // Vous devez toujours utiliser `style` pour l'image de fond
->
+    <section className="banner ">
   <Container>
     <Row className="align-items-center">
       <Col xs={12} md={6} xl={7}>
-        <span className="tagline font-bold tracking-[0.8px] py-[8px] px-[10px] bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] text-white border border-white/[0.5] text-[20px] mb-[16px] inline-block">
+        <span className="tagline font-bold tracking-wider py-8px px-10px text-xl mb-16  inline-block">
           Welcome to my portfolio
         </span>
-        <h1 className="text-[65px] font-bold tracking-[0.8px] leading-none mb-[20px]">
+        <h1 className="text-6xl	 font-bold tracking-wider  leading-none	 mb-20">
           {"Hi I'm Ben Mansour Yossra "}
           <span className="wrap">{text}</span>
         </h1>
-        <p className="text-[#B8B8B8] text-[18px] tracking-[0.8px] leading-[1.5em] w-[96%]">
+        <p className=" text-base tracking-wider  leading-6	 w-100">
           Junior web developer passionate about creating responsive and user-friendly interfaces. Always learning and ready for new challenges!
         </p>
         <button
           onClick={() => console.log("let's connect")}
-          className="text-white font-bold text-[20px] mt-[60px] flex items-center"
         >
-          Let's Connect <i className="bi bi-arrow-right-circle text-[25px] ml-[10px] transition-all duration-300 ease-in-out hover:ml-[25px]"></i>
+          Let's Connect<i class="bi bi-arrow-right-circle"></i>
         </button>
       </Col>
       <Col xs={12} md={6} xl={5}>

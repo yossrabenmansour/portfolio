@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container , Nav, Navbar} from 'react-bootstrap'
+import {  HashLink} from 'react-router-hash-link';
+import { BrowserRouter as Router} from "react-router-dom";
 import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
@@ -23,6 +25,7 @@ export default function NavBar() {
         setActiveLink(value)
     }
   return (
+    <Router>
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
     <Container>
       <Navbar.Brand href="#home">
@@ -35,16 +38,19 @@ export default function NavBar() {
           <Nav.Link href="#Skills" className={activeLink==='skills' ? 'active-navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('skills')}>Skills</Nav.Link>
           <Nav.Link href="#Projects" className={activeLink==='projects' ? 'active-navbar-link' : 'navbar-link'} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
         </Nav>
-        <span className='Navbar-taxt'>
+        <span className='Navbar-text'>
             <div className='social-icon'>
                 <a href='wwww.elqkhnls.com'><img src={navIcon1} alt=''/></a>
                 <a href='wwww.elqkhnls.com'><img src={navIcon2} alt=''/></a>
                 <a href='wwww.elqkhnls.com'><img src={navIcon3} alt=''/></a>
             </div>
-            <button className='vvd' onClick={()=>console.log ('connect')}> <span>Let's Connect </span></button>
-        </span>
+            <HashLink to='#connect'>
+                <button className="vvd"><span>Let’s Connect</span></button>
+              </HashLink>     
+          </span>
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  </Router>
   )
 }
