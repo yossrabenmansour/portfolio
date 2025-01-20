@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import headerImg from '../assets/img/header-img.png'
+import './banner.css'
+
+
 export default function Banner() {
     const[loopNumb,setLoopNumb]=useState(0);
     const [isDeleting,setIsDeleting]=useState(false)
@@ -17,8 +20,8 @@ export default function Banner() {
         return()=>{clearInterval(ticker)} 
     })
     const tick = () => {
-        let i = loopNumb % toRotate.length; // Get the index for the array
-        let fullText = toRotate[i]; // Access the string from the array using the index
+        let i = loopNumb % toRotate.length; 
+        let fullText = toRotate[i]; 
         let updatedText = isDeleting
             ? fullText.substring(0, text.length - 1)
             : fullText.substring(0, text.length + 1);
@@ -39,7 +42,7 @@ export default function Banner() {
         }
     }
   return (
-    <section className="banner ">
+    <section className="banner " id='home'>
   <Container>
     <Row className="align-items-center text-center">
       <Col xs={12} md={6} xl={7}>
