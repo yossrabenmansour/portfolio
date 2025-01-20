@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import headerImg from '../assets/img/header-img.svg'
+import headerImg from '../assets/img/header-img.png'
 export default function Banner() {
     const[loopNumb,setLoopNumb]=useState(0);
     const [isDeleting,setIsDeleting]=useState(false)
