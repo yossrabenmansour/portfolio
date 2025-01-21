@@ -43,7 +43,7 @@ export default function NavBar() {
         </Nav>
         <span className='Navbar-text'>
             <div className='social-icon'>
-                <a href="https://fr.linkedin.com/" target="_blank"  rel="noopener noreferrer"><img src={navIcon1} alt=''/></a>
+                <a href="https://www.linkedin.com/in/yossra-benmansour/" target="_blank"  rel="noopener noreferrer"><img src={navIcon1} alt=''/></a>
                 <a href='https://github.com/yossrabenmansour' target="_blank"  rel="noopener noreferrer"><img src={navIcon2} alt=''/></a>
                 <a href='https://vercel.com/yossra-ben-mansours-projects' target="_blank"  rel="noopener noreferrer"><img src={navIcon3} alt=''/></a>
                 
